@@ -1,0 +1,31 @@
+1.Инсталиран и креиран.
+2.Променето.
+3.Креиран приватен репозиториум.
+4.$ mkdir SI_2024_lab1_223060->со ова креирав локален репозиториум; $ git init->со ова го инизијализирав Git во директориумот.
+5.$ git remote add origin https://github.com/milenajaneva12/SI_2024_lab1_223060.git->со ова го поврзав локалниот репозиториум со оддалечениот репозиториум.
+6.$ nano README.md->со ова направив фајл со кој ги пишав моите основни податоци;$ git add README.md->со ова го ставаме во staged фазата;и
+$ git commit -m"Initial commit"->со ова правиме комит.
+7.$ git add .->со ова го ставаме во staged фазата;$ git commit -m"Add starter code"->со ова правиме комит.
+8.$ git push -u origin master->со ова ги Синхронизирав сите гранки со оддалечениот репозиториум(Github).
+9.$ git checkout -b bug1 и $ git checkout -b bug2->со ова од master ги правиме гранките.
+10.$ git checkout bug1->со ова се префрламе на гранката bug1.
+11.Јa поправив грешката и потоа правиме $ git add   SILab1_1.java и $ git commit -m"а Fix wrong condition in filterOddLengthStrings".
+12.$ git checkout bug2->со ова се префрламе на гранката bug2.
+13.Јa поправив грешката и потоа правиме $ git add   SILab1_1.java и $ git commit -m"Fix wrong condition in makeBigStringFrom".
+14.$ git checkout bug1->со ова се вракаме на гранката bug1.
+15.Го додадов повикот и потоа направив $ git add SILab1Main.java и $ git commit -m"Call method filterOddLengthStrings in main class".
+16.$ git checkout bug2->со ова се вракаме на гранката bug2.
+17.Го додадов повикот и потоа направив $ git add SILab1Main.java и $ git commit -m"Call method makeBigStringFrom in main class".
+18.Правиме $ git push -u origin bug1 и $ git push -u origin bug2;
+19.$ git checkout master;
+20.$ git merge bug1,нема конфликт и стратегијата е Fast-Forward;
+21.$ git push origin master;
+22.$ git checkout bug2;
+23.Направив $ git rebase master и се појави конфликти и  ги решив со $ git rebase --continue,стратегијата е recursive.
+24.$ git checkout master;
+25.$ git merge bug2,нема конфликт и стратегијата е Fast-Forward;
+26.$ git push origin master;
+27.$ git push origin bug2 --force
+28.Направив дадотека и со $  git log >logs.txt го додадов logs.txt и со $ git add logs.txt 223060.txt ја додов дадотеката и на крај 
+$ git commit -m "Final commit".
+29.git push origin master;
